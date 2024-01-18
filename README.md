@@ -29,7 +29,7 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## Contact
 For any questions or inquiries, please contact the project maintainer at [kody.klupt@queensu.ca](mailto:kody.klupt@queensu.ca).
 
-#FAQ:
+# FAQ:
 ## Does it actually work well? Is it better than just creating primers manually in a program like SnapGene or Benchling?
 I think so...1) it is easy to make small mistakes when designing primers and copying them between files or order entries - the automated and interactive scripts I have written streamline this so you only need to copy and paste once. 2) Thanks to the original Primers package developers, they have optimized primers to have reasonable GC content, length, melting temperature, etc... 3) If you have a library of constructs all going into the same plasmid, if the prefix and suffix (i.e. the restriction digest regions) are identical, it is so much quicker. 
 

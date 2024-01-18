@@ -29,6 +29,12 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## Contact
 For any questions or inquiries, please contact the project maintainer at [kody.klupt@queensu.ca](mailto:kody.klupt@queensu.ca).
 
+#FAQ:
+## Does it actually work well? Is it better than just creating primers manually in a program like SnapGene or Benchling?
+I think so...1) it is easy to make small mistakes when designing primers and copying them between files or order entries - the automated and interactive scripts I have written streamline this so you only need to copy and paste once. 2) Thanks to the original Primers package developers, they have optimized primers to have reasonable GC content, length, melting temperature, etc... 3) If you have a library of constructs all going into the same plasmid, if the prefix and suffix (i.e. the restriction digest regions) are identical, it is so much quicker. 
+
+## What is the prefix and suffix?
+This is the forward and reverse primer overhangs, the regions that DO NOT anneal to your construct. The forward (or prefix) is generally several nucleotides (e.g. TATA), followed by a restriction enzyme cut site, and likely a start codon (ATG). The reverse (suffix) site contains most likely a stop codon, followed by a restriction enzyme cut site, and finally several nucleotides (e.g. TATA). I have altered the program using the Bio python package, reverse complement function, to automatically generate the reverse primer correctly. This means, write the reverse (suffix) in the 5'->3' direction after your construct sequence and it will AUTOMATICALLY BE CONVERTED TO THE REVERSE COMPLEMENT. 
 
 
 # primers (original documentation from the primers library)

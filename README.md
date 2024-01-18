@@ -7,20 +7,21 @@ The Primer Designer is a tool for designing primers for DNA amplification experi
 - Input target DNA sequence(s)
 - Generate optimized primer sequences
 - View primer properties (GC content, melting temperature, etc.)
-- Export primer sequences in various formats (CSV, etc.)
+- Export primer sequences in CSV format.
 - Since most websites provide the option of inputting comma separated primers in batch, simply copy and paste the exported primer names and sequences to your order. This works great for Eurofines Genomics, IDT, etc.
-- 
+
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/KodyKlupt/primer_designer`
 2. Use the scripts in the 'Automated Design' Folder, otherwise you can use the original forked repository files which I have left.
+3. A sample entry format is provided. Simply add your sequence name and sequences to be amplified in the csv file.
 
 ## Usage
 1. Open the Primer Designer application.
 2. Input the target DNA sequence(s) in the designated field.
 3. Keep creating new primers, when complete type 'DONE' in the prompt for the primer name.
 5. View the generated primer sequences and their properties.
-6. Export the primer sequences in the CSV format.
+6. Export the primer sequences in the CSV format. A log file will be provided that provides scores for the primers designed. The primer sequences can be copy and pasted into a batch order for nucleotide synthesis.
 
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
